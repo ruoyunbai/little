@@ -492,7 +492,7 @@ function sendStatusByWs(m = "") {
 // }
 function createWebSocket() {
   // ws = new WebSocket("ws://" + location.hostname + ":9000/ws")
-  conn = new WebSocket("ws://" + document.location.host + "/ws");
+  conn = new WebSocket("ws://" + "8.130.31.124:8077" + "/ws");
   console.log(document.location.host)
 
   conn.onopen = function () {
